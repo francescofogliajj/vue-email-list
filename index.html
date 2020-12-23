@@ -10,7 +10,7 @@
 
     <div id="root">
       <h1>vue-email-list</h1>
-      <ol>
+      <ol v-if="emailList.length == 10">
         <li v-for="email in emailList">{{ email }}</li>
       </ol>
     </div>
